@@ -10,7 +10,8 @@ import { createHttpLink } from '@apollo/client/link/http'
 import App from "./App"
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:4000/graphql'
+    //'http://localhost:4000/graphql'
+    uri: 'https://sleepy-mesa-18665.herokuapp.com/graphql'
 })
 
 const authLink = setContext(() => {
